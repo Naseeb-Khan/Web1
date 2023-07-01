@@ -1,0 +1,39 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+body{
+    background: black;
+}
+.text-box{
+    width: 600px;
+    position: absolute;
+    top: 200px;
+    left: 100px;
+    color: aliceblue;
+}
+.text-box h1{
+    margin-bottom: 40px;  
+}
+.text-box p{
+    font-size: 14px;
+    line-height: 18px;
+    margin-top: 80px;
+    text-align: justify;
+}
+.text-box span{
+    background-color: rgb(158, 7, 7);
+    height: 2px;
+    width: 150px;
+    position: absolute;
+    left: 0;
+}
+.main{
+    background-color: rgba(0, 255, 170, 0.87);
+    width: 400px;
+    height: 200px;
+    border: solid aqua 5px;
+}

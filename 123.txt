@@ -1,0 +1,41 @@
+47	Grid:
+a.	Grid parent properties:
+i.	Display: grid;
+1.	Grid-template-columns:;	 // we can use pixels/fractions/percentage/auto to define the width of columns.
+2.	Grid-template-rows:; 		 // used to define the size of rows 
+3.	Grid-column-gap:;
+4.	Grid-row-gap:;
+5.	Grid-gap:;
+6.	Justify-content: start/end/center/space-between/space-around/space-evenly;
+7.	Align-content: start/end/center;
+8.	2.1	grid-templete-rows: 100px 100px 100px;	(rows number and height)
+9.	2.2	grid-templete-rows: 1fr 1fr 1fr;	(rows number and height)
+10.	2.3	grid-templete-rows: repeat(3, 1fr);	(3rows with equal height)
+11.	2.4	grid-templete-rows: 200px 1fr 1fr;
+12.	3.1	gird-templete-columns: 100px 100px 100px; (columns number and width)
+13.	3.2	grid-templete-columns: 1fr 1fr 1fr;	(columns number and width)
+14.	3.3	grid-templete-columns: repeat(3, 1fr);
+15.	3.4	grid-templete-columns: 200px 1fr 1fr;
+16.	
+b.	Grid children properties:
+i.	Grid-column-start:1;
+ii.	Grid-column-end:2;
+iii.	Grid-column: 1/span2;
+iv.	Grid-row: 1/3;
+v.	Grid-row: 1/span2;
+vi.	Grid-area: 1/2/3/4;	// row starts from 1 column start from 2 row ends on 3 columns ends on 4 
+vii.	pixels percentage auto fr repeat(2, 100px) (repeat(3, 20%) 120px)
+to align or justify them:
+c.		align-items: 
+d.		justify-items:
+e.		align-self:
+f.		justify-self:
+g.	grid children properties/ grid items properties:
+h.		1.	to span a column or row:
+i.			.grid-children{grid-column-start:1;
+j.					gird-column-end:3;}
+k.			.grid-children{grid-row-start:1;
+l.					grid-row-end: 2;}
+m.	method no2 to span row/column:
+n.		.grid-children{grid-row: 1 /span2;}
+o.		.grid-children{grid-column: 2 /span3;}
